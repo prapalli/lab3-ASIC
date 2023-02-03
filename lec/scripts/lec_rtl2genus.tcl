@@ -7,7 +7,7 @@
 
 global env
 read_design ../../syn/rtl/$env(TOP).sv -SYStemverilog -Golden -sensitive -continuousassignment Bidirectional -nokeep_unreach   -nosupply -root $env(TOP)
-read_design [list /pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/verilog/saed32nm.v ../../syn/outputs/$env(TOP).dc.vg ] -verilog  -revised -sensitive -continuousassignment Bidirectional -nokeep_unreach   -nosupply -root $env(TOP)
+read_design [list /pkgs/synopsys/2020/32_28nm/SAED32_EDK/lib/stdcell_rvt/verilog/saed32nm.v ../../syn/outputs/$env(TOP).genus.vg ] -verilog  -revised -sensitive -continuousassignment Bidirectional -nokeep_unreach   -nosupply -root $env(TOP)
 set_system mode lec
 add_compared_points -all
 compare
